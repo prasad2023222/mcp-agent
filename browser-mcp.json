@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@executeautomation/playwright-mcp-server"]
+    },
+        "airbnb": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@openbnb/mcp-server-airbnb"
+          ]
+        
+      },
+    "duckduckgo-search": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "duckduckgo-mcp-server"
+        ]
+    },
+    "HANA Database": {
+      "command": "hana-mcp-server",
+      "env": {
+        "HANA_HOST": "your-hana-host.com",
+        "HANA_PORT": "443",
+        "HANA_USER": "your-username",
+        "HANA_PASSWORD": "your-password",
+        "HANA_SCHEMA": "your-schema",
+        "HANA_SSL": "true",
+        "HANA_ENCRYPT": "true",
+        "HANA_VALIDATE_CERT": "true",
+        "HANA_CONNECTION_TYPE": "auto",
+        "HANA_INSTANCE_NUMBER": "10",
+        "HANA_DATABASE_NAME": "HQQ",
+        "LOG_LEVEL": "info",
+        "ENABLE_FILE_LOGGING": "true",
+        "ENABLE_CONSOLE_LOGGING": "false"
+      }
+    }
+  }
+}
+  
